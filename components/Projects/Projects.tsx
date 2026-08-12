@@ -10,7 +10,7 @@ import "./Projects.css";
 const projectsData = [
   {
     title: "Hotel Booking Platform",
-    image: "/hotel.png",
+    image: "/bookinglk1.png",
     description: "BookingLK is a modern full-stack hotel booking web application that enables users to explore and book hotels across Sri Lanka. The platform features hotel search, detailed property listings, real-time booking, and email confirmation for reservations. Built with Next.js, React, and TypeScript, the application uses MongoDB Atlas as the database and Next.js API Routes for backend services. The interface is designed with Tailwind CSS, CSS Modules, and Framer Motion to provide a responsive and engaging user experience.",
     overview: "A full-stack hotel booking platform that connects travelers with accommodations across Sri Lanka. The system handles user authentication, property management, real-time booking, payment processing, and email confirmations.",
     features: [
@@ -21,6 +21,7 @@ const projectsData = [
       "Property Management Dashboard",
       "Responsive UI with Tailwind CSS",
       "Secure Payment Integration",
+      "Admin Panel for Hotel Owners",
       "Booking History & Management"
     ],
     tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind", "Framer Motion", "JWT Authentication"],
@@ -42,6 +43,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/Zashiyh/bookinglkapi",
+     demo: "https://bookinglk2-0-kzfl-five.vercel.app/",
     
     number: "01"
   },
