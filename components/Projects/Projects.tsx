@@ -43,7 +43,7 @@ const projectsData = [
     ],
     status: "Completed • Live • Maintained",
     github: "https://github.com/Zashiyh/bookinglk2.0",
-     demo: "https://bookinglk2-0-kzfl-five.vercel.app/",
+     demo: "https://bookinglk2-0.vercel.app/",
     
     number: "01"
   },
