@@ -42,7 +42,7 @@ const projectsData = [
       "Optimized Database Queries"
     ],
     status: "Completed • Live • Maintained",
-    github: "https://github.com/Zashiyh/bookinglkapi",
+    github: "https://github.com/Zashiyh/bookinglk2.0",
      demo: "https://bookinglk2-0-kzfl-five.vercel.app/",
     
     number: "01"
