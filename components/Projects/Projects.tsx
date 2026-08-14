@@ -31,6 +31,7 @@ const projectsData = [
       "Protected API Routes",
       "Role-Based Access Control",
       "Input Validation & Sanitization",
+      "Google Gamil OTP Authentication And Verfifcation",
       "MongoDB Schema Validation"
     ],
     performance: [
@@ -39,6 +40,9 @@ const projectsData = [
       "Fast Loading Times",
       "Reusable Components",
       "Scalable Architecture",
+      "Booking Conform Mail With Full Details",
+      "User Review",
+      "User Can View Hotel Location With MAP",
       "Optimized Database Queries"
     ],
     status: "Completed • Live • Maintained",
