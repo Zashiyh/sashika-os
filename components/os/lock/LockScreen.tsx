@@ -159,7 +159,7 @@ export function LockScreen({
                       onClick={onSkipIntro}
                       className="mt-3 w-full rounded-lg py-2 text-xs text-slate-400 transition hover:text-cyan-200"
                     >
-                      Skip intro — go straight to the desktop
+                      
                     </button>
                   </motion.div>
                 ) : (
