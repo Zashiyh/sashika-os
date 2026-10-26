@@ -110,12 +110,12 @@ export const profile = {
   /** Set to null to show the built-in placeholder avatar */
   photo: "/myprofile.jpeg" as string | null,
   email: "sashikamadushan2003@gmail.com",
-  availability: "Open to internship opportunities",
+  availability: "Open to work",
   shortIntro:
     "Software Engineering undergraduate building modern web applications, full-stack systems and interactive digital experiences.",
   intro: [
     "I'm Sashika Madushan, a Software Engineering undergraduate at the National Institute of Business Management (NIBM), Sri Lanka. I'm passionate about creating modern digital products that combine thoughtful design, solid engineering and real-world functionality.",
-    "My main focus is web development — especially responsive interfaces and full-stack applications built with modern JavaScript and TypeScript technologies. I enjoy turning real-world requirements into clean, maintainable and user-focused software.",
+    "My main focus is web development especially responsive interfaces and full-stack applications built with modern JavaScript and TypeScript technologies. I enjoy turning real-world requirements into clean, maintainable and user-focused software.",
     "Beyond web development, I enjoy exploring AI, cybersecurity, cloud technologies, mobile development and IoT systems. Every project is an opportunity to improve my engineering skills, experiment with ideas and create something useful.",
   ],
   principles: [
@@ -157,7 +157,7 @@ export const profile = {
     "QA / Software Testing",
   ],
   careerGoal:
-    "I'm looking for an IT / Software Engineering internship where I can gain practical industry experience while contributing to real software projects — strengthening my engineering fundamentals, working with experienced teams and gradually taking responsibility for building reliable, maintainable software.",
+    "I'm looking for an IT / Software Engineering internship where I can gain practical industry experience while contributing to real software projects strengthening my engineering fundamentals, working with experienced teams and gradually taking responsibility for building reliable, maintainable software.",
 } as const;
 
 export const socialLinks: SocialLink[] = [
@@ -359,35 +359,50 @@ export const projects: Project[] = [
     tech: ["React Native", "Expo", "JavaScript", "TypeScript", "REST APIs"],
     status: { label: "No public repository", tone: "private" },
   },
-  {
-    id: "gov-biodata",
-    name: "Government Officer Biodata Management System",
-    tagline: "Officer biodata records management",
-    categories: ["business", "web"],
-    problem: "Managing government officers' biodata records in a structured, centralised system.",
-    description:
-      "A records management system for government officer biodata. The full project write-up — technologies, features and status — has not been published yet.",
-    features: [],
-    tech: [],
-    status: { label: "Details coming soon", tone: "pending" },
-    detailsPending: true,
+  
+{
+  id: "gov-biodata",
+  name: "Government Officer Biodata Management System",
+  image: "/gov-biodata.png",
+  tagline: "Centralised government officer biodata and records management",
+  categories: ["business", "web"],
+  problem:
+    "Managing government officers' personal and service information through manual records makes data organisation, access control, and record maintenance difficult.",
+  description:
+    "A web-based management system designed to digitise and organise government officers' biodata records. Officers can register, obtain approval, log in, and maintain their own biodata, while authorised administrators can manage user accounts and records.",
+  features: [
+    "Officer registration and account approval workflow",
+    "Email verification and approval-based access control",
+    "Secure login for registered officers",
+    "Officer biodata form management",
+    "Personal biodata access and updates",
+    "Administrative account and record management",
+    "Multilingual interface support for English, Sinhala, and Tamil",
+    "Biodata export to Word and print-ready PDF",
+    "MongoDB Atlas database integration",
+    "Responsive web interface",
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "MongoDB",
+    "Mongoose",
+    "Tailwind CSS",
+    "Vercel",
+  ],
+  status: {
+    label: "In Development",
+    tone: "pending",
   },
-  {
-    id: "uds-increment",
-    name: "UDS Increment Data",
-    tagline: "Increment data management",
-    categories: ["business"],
-    problem: "Recording and managing UDS increment data.",
-    description:
-      "A data management project for UDS increment records. The full project write-up — technologies, features and status — has not been published yet.",
-    features: [],
-    tech: [],
-    status: { label: "Details coming soon", tone: "pending" },
-    detailsPending: true,
-  },
+  detailsPending: false,
+},
+
+
   {
     id: "form-172",
     name: "172 Form ID Registration & Payment Receipt System",
+    image: "/form-172.png",
     tagline: "ID registration & receipt management",
     categories: ["business", "web"],
     problem: "Handling 172 Form ID registrations and their payment receipts in one place.",
@@ -398,26 +413,7 @@ export const projects: Project[] = [
     status: { label: "Details coming soon", tone: "pending" },
     detailsPending: true,
   },
-  {
-    id: "portfolio",
-    name: "SASHIKA OS (this portfolio)",
-    tagline: "Interactive 3D cyber operating system portfolio",
-    categories: ["web"],
-    problem: "A portfolio that is memorable and interactive while keeping all content fast, accessible and easy to explore.",
-    description:
-      "My personal portfolio, rebuilt as a retro-futuristic operating system inside a 3D monitor: a cinematic boot, an identity lock screen, a desktop with draggable windows, a portfolio terminal and a 2D fallback for devices without WebGL.",
-    features: [
-      "3D monitor scene built with React Three Fiber",
-      "Window manager with drag, minimise, maximise and keyboard support",
-      "Portfolio terminal with safe, data-driven commands",
-      "Classic retro and modern cyber themes",
-      "Reduced-motion support and 2D fallback",
-    ],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Three.js", "React Three Fiber", "Framer Motion"],
-    status: { label: "Live", tone: "live" },
-    github: "https://github.com/Zashiyh/sashika-madushan-portfolio",
-    demo: "https://sashikaportfolio.vercel.app",
-  },
+
 ];
 
 export const projectCategoryLabels: Record<ProjectCategory, string> = {

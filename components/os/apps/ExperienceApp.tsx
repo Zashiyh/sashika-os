@@ -29,8 +29,8 @@ export default function ExperienceApp() {
           ))}
         </ol>
       ) : (
-        <EmptyState icon={Briefcase} title="No professional roles listed yet">
-          {profile.firstName} is a Software Engineering undergraduate currently looking for an IT / Software Engineering internship.
+        <EmptyState icon={Briefcase} title="Working on udapalatha divisional secretariat IT department (Internship)">
+           is a web and full-stack developer,system and databse designer.
         </EmptyState>
       )}
 
@@ -38,7 +38,7 @@ export default function ExperienceApp() {
         <SectionTitle icon={Hammer}>Hands-on development</SectionTitle>
         <div className="os-card p-4">
           <p className="text-sm leading-relaxed">
-            Practical experience so far comes from building and shipping projects —{" "}
+            Practical experience so far comes from building and shipping projects {" "}
             <strong>{publishedProjects.length} documented projects</strong> spanning full-stack web platforms, business management systems, a
             security operations dashboard, an AI chat app and Android / IoT applications.
           </p>
