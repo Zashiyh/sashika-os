@@ -14,7 +14,7 @@ import "./Hero.css";
 
 export default function Hero() {
   const handleContactClick = () => {
-    window.location.href = "mailto:sashika@example.com";
+    window.location.href = "mailto:sashikamadushan2003@gmail.com";
   };
 
   return (
@@ -46,7 +46,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p className="hello">Hi I'M</p>
+        <p className="hello">Hi I&apos;M</p>
 
         <h1 className="glitch">
           <span className="first-name">Sashika</span>
@@ -93,13 +93,13 @@ export default function Hero() {
         </div>
 
         <div className="socials">
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/Zashiyh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/sashika-madushan-448612299/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="mailto:sashika@example.com">
+          <a href="mailto:sashikamadushan2003@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
         </div>

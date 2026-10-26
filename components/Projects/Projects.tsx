@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useEffect, useCallback, useMemo, lazy, Suspense } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTimes, FaCheck, FaShieldAlt, FaRocket } from "react-icons/fa";
 import BorderGlow from "../BorderGlow";
@@ -190,7 +190,6 @@ const projectsData = [
       "Scalable Architecture"
     ],
     status: "Completed • Live • Maintained",
-    github: "https://github.com/your-username/gamer-zone",
     
     number: "05"
   }
@@ -280,6 +279,7 @@ const ProjectModal = ({ project, onClose }: { project: typeof projectsData[0] | 
 
           {/* Buttons */}
           <div className="modal-buttons">
+            {project.github && (
             <a 
               href={project.github} 
               target="_blank" 
@@ -288,6 +288,8 @@ const ProjectModal = ({ project, onClose }: { project: typeof projectsData[0] | 
             >
               <FaGithub /> GitHub
             </a>
+            )}
+            {project.demo && (
             <a 
               href={project.demo} 
               target="_blank" 
@@ -296,6 +298,7 @@ const ProjectModal = ({ project, onClose }: { project: typeof projectsData[0] | 
             >
               <FaExternalLinkAlt /> Live Demo
             </a>
+            )}
           </div>
         </div>
       </>
@@ -475,6 +478,7 @@ export default function Projects() {
                         </div>
 
                         <div className="project-links">
+                          {project.github && (
                           <a 
                             href={project.github} 
                             className="github-link"
@@ -484,6 +488,8 @@ export default function Projects() {
                           >
                             <FaGithub /> Code
                           </a>
+                          )}
+                          {project.demo && (
                           <a 
                             href={project.demo} 
                             className="demo-link"
@@ -493,6 +499,7 @@ export default function Projects() {
                           >
                             <FaExternalLinkAlt /> Live Demo
                           </a>
+                          )}
                         </div>
                       </div>
                     </div>

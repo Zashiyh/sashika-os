@@ -1,38 +1,27 @@
-"use client";
+import SashikaOS from "@/components/os/SashikaOS";
+import { PortfolioStatic } from "@/components/os/PortfolioStatic";
+import { getSocial, profile } from "@/data/portfolio";
 
-import { useState, useEffect } from "react";
-import Loading from "@/components/Loding/Loading";
-import Hero from "@/components/Hero/Hero";
-import About from "@/components/About/About";
-import Skills from "@/components/Skills/Skills";
-import Projects from "@/components/Projects/Projects";
-import Contact from "@/components/Contact/Contact";
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  jobTitle: profile.role,
+  email: `mailto:${profile.email}`,
+  address: { "@type": "PostalAddress", addressCountry: "LK" },
+  url: getSocial("portfolio").href,
+  sameAs: [getSocial("github").href, getSocial("linkedin").href],
+};
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Site load වෙන්න 2.5s ගන්නවා
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-      )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
+      <SashikaOS />
+      {/* Full content for visitors without JavaScript */}
+      <noscript>
+        <PortfolioStatic />
+      </noscript>
     </>
   );
 }

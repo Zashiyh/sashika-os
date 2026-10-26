@@ -6,7 +6,6 @@ import {
   FaReact,
   FaNodeJs,
   FaAws,
-  FaDocker,
   FaGitAlt,
   FaDatabase,
   FaLinux,
@@ -19,7 +18,6 @@ import {
 import {
   SiNextdotjs,
   SiTypescript,
-  SiJavascript,
   SiTailwindcss,
   SiMongodb,
   SiFirebase,
@@ -71,7 +69,7 @@ const skills = [
 ];
 
 // Animated Skill Item
-function AnimatedSkillItem({ skill, delay = 0 }: { skill: any; delay?: number }) {
+function AnimatedSkillItem({ skill, delay = 0 }: { skill: { name: string; icon: React.ReactNode; level: number }; delay?: number }) {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(0);
   const itemRef = useRef<HTMLDivElement>(null);

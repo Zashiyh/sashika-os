@@ -13,7 +13,6 @@ import "./Contact.css";
 
 export default function Contact() {
   // WhatsApp number - ඔයාගේ number එක දාන්න (country code එකත් එක්ක)
-  const whatsappNumber = "94771234567"; // Replace with your number
   const whatsappMessage = "Hi! I'm interested in your portfolio.";
 
   return (
@@ -26,7 +25,7 @@ export default function Contact() {
       >
         <div className="contact-info">
           <h2>
-            Let's <span>Connect</span>
+            Let&apos;s <span>Connect</span>
           </h2>
 
           <p>
@@ -46,7 +45,7 @@ export default function Contact() {
 
           <div className="social-links">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/Zashiyh"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -55,7 +54,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/sashika-madushan-448612299/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

@@ -58,7 +58,6 @@ function CountUp({ end, duration = 2000, suffix = "" }: { end: number; duration?
         if (entries[0].isIntersecting && !hasAnimated) {
           setHasAnimated(true);
           let startTime: number;
-          const startValue = 0;
 
           const animateCount = (timestamp: number) => {
             if (!startTime) startTime = timestamp;
@@ -115,7 +114,7 @@ export default function About() {
           </h2>
 
           <p>
-            I'm Sashika Madushan, a Software Engineering undergraduate
+            I&apos;m Sashika Madushan, a Software Engineering undergraduate
             passionate about building modern web applications,
             backend systems and exploring cloud technologies.
           </p>
