@@ -578,18 +578,20 @@ export const experience: ExperienceEntry[] = [];
 
 /** Credly certificates */
 export const certificates: Certificate[] = [
-  {
-    title: "Ethical Hacker",
-    issuer: "Cisco",
-    credentialUrl:
-      "https://www.credly.com/badges/f6b1a1ba-f8c1-4365-ba66-74d881fcd3f2/linked_in_profile",
-  },
-  {
-    title: "AWS Knowledge: Amazon Q Developer Fundamentals - Training Badge",
-    issuer: "Amazon Web Services",
-    credentialUrl:
-      "https://www.credly.com/badges/b176f97d-c6a5-4950-849f-0c12759958ff/linked_in_profile",
-  },
+{
+  title: "Ethical Hacker",
+  issuer: "Cisco",
+  credentialUrl:
+    "https://www.credly.com/badges/f6b1a1ba-f8c1-4365-ba66-74d881fcd3f2/linked_in_profile",
+  image: "/images/certificates/ethical-hacker.png",
+},
+{
+  title: "AWS Q Developer",
+  issuer: "Amazon Web Services",
+  credentialUrl:
+    "https://www.credly.com/badges/b176f97d-c6a5-4950-849f-0c12759958ff/linked_in_profile",
+  image: "/images/certificates/aws-q-developer.png",
+},
 ];
 
 export const achievements: Achievement[] = [
