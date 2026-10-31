@@ -107,7 +107,7 @@ export function DesktopEnvironment({ isMobile, canUse3D, initialApp, onLock, onR
           title: "Welcome to SASHIKA OS",
           body: isMobile
             ? "Tap an app to explore. Use ‹ Home to come back here."
-            : "Click an icon to explore. Tip: Alt+Shift+T opens the Terminal — try typing help.",
+            : "Click an icon to explore. Tip: Alt+Shift+T opens the Terminal try typing help.",
         }),
       900,
     );
