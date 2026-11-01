@@ -140,7 +140,7 @@ export function AccessSequence({ reducedMotion, play, onComplete }: AccessSequen
         )}
       </AnimatePresence>
 
-      <p className="mt-4 text-[10px] text-slate-500">Visual sequence only — nothing is collected, scanned or verified.</p>
+      <p className="mt-4 text-[10px] text-slate-500">Visual sequence only  nothing is collected, scanned or verified.</p>
     </div>
   );
 }

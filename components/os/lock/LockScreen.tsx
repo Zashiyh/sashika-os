@@ -175,7 +175,7 @@ export function LockScreen({
         {/* Footer controls */}
         <footer className="flex flex-wrap items-center justify-between gap-2 px-5 pb-4 text-[11px] text-slate-400 @4xl:px-10 @4xl:pb-6">
           <p className="hidden items-center gap-1.5 @md:flex">
-            <Sparkles className="size-3.5 text-cyan-300/70" aria-hidden /> Guest session · interface animation only
+            
           </p>
           <div className="flex items-center gap-1">
             <SoundToggleButton
